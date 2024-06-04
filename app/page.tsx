@@ -67,15 +67,15 @@ const Team = () => (
           <h2 className="text-4xl font-semibold">Para Pengurus</h2>
           <p className="text-lg leading-relaxed m-4 text-gray-600">
             Mandiri dengan kualitas dan integritas yang indah, kami hadir dengan
-            tagline "Sementara Sempurna"
+            tagline &quot;Kebermanfaatan Sementara Sempurna&quot;
           </p>
         </div>
       </div>
       <hr className="my-6 border-gray-300" />
       <div className="grid sm:grid-cols-3 grid-cols-1">
         {listPengurus.map((item, index) => (
-          <div className="grid sm:mb-0 content-center mb-12 px-4">
-            <div className="px-6 py-4" key={index}>
+          <div className="grid sm:mb-0 content-center mb-12 px-4"  key={index}>
+            <div className="px-6 py-4">
               <img
                 alt="..."
                 src={`https://ui-avatars.com/api/?name=${item.name}&background=0D8ABC&color=fff&size=128`}
