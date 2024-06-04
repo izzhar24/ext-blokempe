@@ -2,112 +2,299 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex min-h-screen flex-col p-4 sm:p-10 bg-white ">
+      <div className="container mx-auto items-center flex flex-wrap sm:mt-48 mt-12">
+        <div className="flex flex-col w-full md:w-2/5 justify-center text-center md:text-left z-20 sm:z-0 mt-[4.1rem] ">
+          <h1 className="font-semibold text-5xl text-slate-600">
+            PH8-EXT BLOKEMPE
+          </h1>
+          <p className="mt-4 text-lg leading-relaxed text-slate-500">
+            Bersama membangun bersama lingkungan yang aman dan nyaman untuk
+            semua masyarakat sekitar dengan mengusung konsep{" "}
+            <span className="font-bold">
+              KEBERMANFAATAN DAN KESEJAHTERAAN BERSAMA
+            </span>
+          </p>
+        </div>
+        <div className="w-full md:w-3/5 text-center">
+          <Image
+            className="absolute top-0 b-auto right-0 sm:pt-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 object-cover"
+            src="/ill_header_3.png"
+            width={500}
+            height={500}
+            alt="..."
+          />
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <Team />
     </main>
   );
 }
+
+/// Page Sections
+interface ListPengurus {
+  name: string;
+  role: string;
+}
+const listPengurus: ListPengurus[] = [
+  {
+    name: "Tarjono",
+    role: "Ketua Pengurus (Sementara)",
+  },
+  {
+    name: "Hariyanto",
+    role: "Wakil Ketua Pengurus (Sementara)",
+  },
+  {
+    name: "Agus Firman",
+    role: "Sekretaris Pengurus I(Sementara)",
+  },
+  {
+    name: "Anas",
+    role: "Sekretaris Pengurus II(Sementara)",
+  },
+  {
+    name: "Irfan",
+    role: "Bendahara Pengurus(Sementara)",
+  },
+];
+
+const Team = () => (
+  <section className="pt-20 sm:pb-24 pb-2">
+    <div className="container mx-auto px-4">
+      <div className="flex flex-wrap justify-center text-center mb-8 text-slate-600">
+        <div className="w-full lg:w-6/12 px-4">
+          <h2 className="text-4xl font-semibold">Para Pengurus</h2>
+          <p className="text-lg leading-relaxed m-4 text-gray-600">
+            Mandiri dengan kualitas dan integritas yang indah, kami hadir dengan
+            tagline "Sementara Sempurna"
+          </p>
+        </div>
+      </div>
+      <hr className="my-6 border-gray-300" />
+      <div className="grid sm:grid-cols-3 grid-cols-1">
+        {listPengurus.map((item, index) => (
+          <div className="grid sm:mb-0 content-center mb-12 px-4">
+            <div className="px-6 py-4" key={index}>
+              <img
+                alt="..."
+                src={`https://ui-avatars.com/api/?name=${item.name}&background=0D8ABC&color=fff&size=128`}
+                className="shadow-lg rounded-full max-w-full mx-auto"
+                width={120}
+                height={120}
+              />
+              <div className="pt-6 text-center">
+                <h5 className="text-xl font-bold">{item.name}</h5>
+                <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  {item.role}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
+        {/* <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+      <div className="px-6">
+        <img
+          alt="..."
+          src={require('../assets/img/team-2-800x800.jpg')}
+          className="shadow-lg rounded-full max-w-full mx-auto"
+          style={{ maxWidth: "120px" }}
+        />
+        <div className="pt-6 text-center">
+          <h5 className="text-xl font-bold">
+            Romina Hadid
+              </h5>
+          <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
+            Marketing Specialist
+              </p>
+          <div className="mt-6">
+            <button
+              className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+              type="button"
+            >
+              <i className="fab fa-google"></i>
+            </button>
+            <button
+              className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+              type="button"
+            >
+              <i className="fab fa-facebook-f"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+      <div className="px-6">
+        <img
+          alt="..."
+          src={require('../assets/img/team-3-800x800.jpg')}
+          className="shadow-lg rounded-full max-w-full mx-auto"
+          style={{ maxWidth: "120px" }}
+        />
+        <div className="pt-6 text-center">
+          <h5 className="text-xl font-bold">
+            Alexa Smith
+              </h5>
+          <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
+            UI/UX Designer
+              </p>
+          <div className="mt-6">
+            <button
+              className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+              type="button"
+            >
+              <i className="fab fa-google"></i>
+            </button>
+            <button
+              className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+              type="button"
+            >
+              <i className="fab fa-twitter"></i>
+            </button>
+            <button
+              className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+              type="button"
+            >
+              <i className="fab fa-instagram"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+      <div className="px-6">
+        <img
+          alt="..."
+          src={require('../assets/img/team-4-470x470.png')}
+          className="shadow-lg rounded-full max-w-full mx-auto"
+          style={{ maxWidth: "120px" }}
+        />
+        <div className="pt-6 text-center">
+          <h5 className="text-xl font-bold">
+            Jenna Kardi
+              </h5>
+          <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
+            Founder and CEO
+              </p>
+          <div className="mt-6">
+            <button
+              className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+              type="button"
+            >
+              <i className="fab fa-dribbble"></i>
+            </button>
+            <button
+              className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+              type="button"
+            >
+              <i className="fab fa-google"></i>
+            </button>
+            <button
+              className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+              type="button"
+            >
+              <i className="fab fa-twitter"></i>
+            </button>
+            <button
+              className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+              type="button"
+            >
+              <i className="fab fa-instagram"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> */}
+      </div>
+    </div>
+  </section>
+);
+// const Featured = () => (
+//   <section className="relative py-20">
+//     <div
+//       className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+//       style={{ height: "80px" }}
+//     >
+//       <svg
+//         className="absolute bottom-0 overflow-hidden"
+//         xmlns="http://www.w3.org/2000/svg"
+//         preserveAspectRatio="none"
+//         version="1.1"
+//         viewBox="0 0 2560 100"
+//         x="0"
+//         y="0"
+//       >
+//         <polygon
+//           className="text-white fill-current"
+//           points="2560 0 2560 100 0 100"
+//         ></polygon>
+//       </svg>
+//     </div>
+
+//     <div className="container mx-auto px-4">
+//       <div className="items-center flex flex-wrap">
+//         <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+//           <img
+//             alt="..."
+//             className="max-w-full rounded-lg shadow-lg"
+//             src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+//           />
+//         </div>
+//         <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+//           <div className="md:pr-12">
+//             <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+//               <i className="fas fa-rocket text-xl"></i>
+//             </div>
+//             <h3 className="text-3xl font-semibold">A growing company</h3>
+//             <p className="mt-4 text-lg leading-relaxed text-gray-600">
+//               The extension comes with three pre-built pages to help you get
+//               started faster. You can change the text and images and you're good
+//               to go.
+//             </p>
+//             <ul className="list-none mt-6">
+//               <li className="py-2">
+//                 <div className="flex items-center">
+//                   <div>
+//                     <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+//                       <i className="fas fa-fingerprint"></i>
+//                     </span>
+//                   </div>
+//                   <div>
+//                     <h4 className="text-gray-600">
+//                       Carefully crafted components
+//                     </h4>
+//                   </div>
+//                 </div>
+//               </li>
+//               <li className="py-2">
+//                 <div className="flex items-center">
+//                   <div>
+//                     <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+//                       <i className="fab fa-html5"></i>
+//                     </span>
+//                   </div>
+//                   <div>
+//                     <h4 className="text-gray-600">Amazing page examples</h4>
+//                   </div>
+//                 </div>
+//               </li>
+//               <li className="py-2">
+//                 <div className="flex items-center">
+//                   <div>
+//                     <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+//                       <i className="far fa-paper-plane"></i>
+//                     </span>
+//                   </div>
+//                   <div>
+//                     <h4 className="text-gray-600">Dynamic components</h4>
+//                   </div>
+//                 </div>
+//               </li>
+//             </ul>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   </section>
+// );
