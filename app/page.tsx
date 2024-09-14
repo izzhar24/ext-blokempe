@@ -31,6 +31,7 @@ export default function Home() {
   );
 }
 
+
 /// Page Sections
 interface ListPengurus {
   name: string;
@@ -38,24 +39,24 @@ interface ListPengurus {
 }
 const listPengurus: ListPengurus[] = [
   {
-    name: "Tarjono",
-    role: "Ketua Pengurus (Sementara)",
+    name: "Agus Firman",
+    role: "Ketua Pengurus",
+  },
+  {
+    name: "Endi",
+    role: "Penasehat",
   },
   {
     name: "Hariyanto",
-    role: "Wakil Ketua Pengurus (Sementara)",
-  },
-  {
-    name: "Agus Firman",
-    role: "Sekretaris Pengurus I(Sementara)",
+    role: "Humas",
   },
   {
     name: "Anas",
-    role: "Sekretaris Pengurus II(Sementara)",
+    role: "Sekretaris",
   },
   {
-    name: "Irfan",
-    role: "Bendahara Pengurus(Sementara)",
+    name: "Alfian",
+    role: "Bendahara",
   },
 ];
 
@@ -72,7 +73,7 @@ const Team = () => (
         </div>
       </div>
       <hr className="my-6 border-gray-300" />
-      <div className="grid sm:grid-cols-3 grid-cols-1">
+      <div className="grid sm:grid-cols-[repeat(auto-fit,minmax(0,1fr))] grid-cols-1 justify-center justify-self-center mx-auto w-full">
         {listPengurus.map((item, index) => (
           <div className="grid sm:mb-0 content-center mb-12 px-4"  key={index}>
             <div className="px-6 py-4">
@@ -92,6 +93,7 @@ const Team = () => (
             </div>
           </div>
         ))}
+
         {/* <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
       <div className="px-6">
         <img
@@ -210,6 +212,7 @@ const Team = () => (
     </div>
   </section>
 );
+
 // const Featured = () => (
 //   <section className="relative py-20">
 //     <div
